@@ -30,7 +30,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sparkle-core-test": "file:../core"
+    "sparkle-core-test": "file:../sparkle/core"
   },
   "keywords": [
     "course",
@@ -40,7 +40,6 @@
     "stenciljs",
     "web components",
     "pwa",
-    "progressive web app",
-    "presentation"
+    "progressive web app"
   ]
 }
