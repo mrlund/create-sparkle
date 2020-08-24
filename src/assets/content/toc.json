@@ -1,0 +1,414 @@
+{
+    "id": 1,
+    "name": "Course Name",
+    "courseModules": [
+        {
+            "id": 1,
+            "number": 0,
+            "name": "Module 1",
+            "urlName": "module-one",
+            "sessions": [
+                {
+                    "id": 1,
+                    "number": 0,
+                    "name": "Session 1",
+                    "urlName": "session-one",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 2,
+                    "number": 1,
+                    "name": "Session 2",
+                    "urlName": "session-two",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 3,
+                    "number": 2,
+                    "name": "Session 3",
+                    "urlName": "session-three",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 4,
+                    "number": 3,
+                    "name": "Session 4",
+                    "urlName": "session-four",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "number": 1,
+            "name": "Module 2",
+            "urlName": "module-two",
+            "sessions": [
+                {
+                    "id": 1,
+                    "number": 0,
+                    "name": "Session 2",
+                    "urlName": "session-two",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 2,
+                    "number": 1,
+                    "name": "Session 2",
+                    "urlName": "session-two",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 3,
+                    "number": 2,
+                    "name": "Session 3",
+                    "urlName": "session-three",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 4,
+                    "number": 3,
+                    "name": "Session 4",
+                    "urlName": "session-four",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "number": 2,
+            "name": "Module 3",
+            "urlName": "module-three",
+            "sessions": [
+                {
+                    "id": 1,
+                    "number": 0,
+                    "name": "Session 3",
+                    "urlName": "session-three",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 2,
+                    "number": 1,
+                    "name": "Session 2",
+                    "urlName": "session-two",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 3,
+                    "number": 2,
+                    "name": "Session 3",
+                    "urlName": "session-three",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                },
+                {
+                    "id": 4,
+                    "number": 3,
+                    "name": "Session 4",
+                    "urlName": "session-four",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "name": "Page 1",
+                            "urlName": "page-one"
+                        },
+                       
+                        {
+                            "id": 2,
+                            "name": "Page 2",
+                            "urlName": "page-two"
+                        },
+                        
+                        {
+                            "id": 3,
+                            "name": "Page 3",
+                            "urlName": "page-three"
+                        },
+                      
+                        {
+                            "id": 4,
+                            "name": "Page 4",
+                            "urlName": "page-four"
+                        }
+                       
+                    ]
+                }
+            ]
+        }
+    ]
+}
