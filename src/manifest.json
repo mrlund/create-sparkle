@@ -1,11 +1,10 @@
 {
   "name": "{{SPARKLE_TITLE}}",
-  "short_name": "{{SPARKLE_TITLE_SHORT}}",
+  "short_name": "{{SPARKLE_TITLE}}",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "scope": "/",
-  "start_url": "{{SPARKLE_BASE_HREF}}",
   "icons": [
     {
       "src": "assets/favicon/android-chrome-192x192.png",
