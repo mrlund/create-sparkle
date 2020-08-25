@@ -30,7 +30,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sparkle-core-test": "file:../sparkle/core"
+    "@dhyanitest/core": "0.0.3"
   },
   "keywords": [
     "course",

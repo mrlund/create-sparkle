@@ -1,5 +1,5 @@
-import "../node_modules/sparkle-core-test/src/css/global.css";
+import "../node_modules/@dhyanitest/core/dist/sparkle-core/sparkle-core.css";
 
-import { defineCustomElements as sparkleElements } from "sparkle-core-test/dist/loader";
+import { defineCustomElements as sparkleElements } from "@dhyanitest/core/dist/loader";
 
 sparkleElements();
