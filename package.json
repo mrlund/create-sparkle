@@ -8,6 +8,11 @@
     "dev": "lite-server",
     "watch": "webpack --watch --mode development",
     "build": "webpack --mode production",
+    "all": "sparkle-scripts all",
+    "pages": "sparkle-scripts pages",
+    "generate-pages": "sparkle-scripts generate-pages",
+    "toc": "sparkle-scripts toc",
+    "test": "sparkle-scripts test",
     "local": "concurrently --kill-others \"webpack --watch --mode development --env.local=true\" \"npm run dev\""
   },
   "repository": {
@@ -30,7 +35,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@sparkle-learning/core": "0.0.1"
+    "@sparkle-learning/core": "0.0.1",
+    "sparkle-scripts": "0.0.1"
   },
   "keywords": [
     "course",
