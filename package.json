@@ -35,8 +35,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@sparkle-learning/core": "0.0.1",
-    "sparkle-scripts": "0.0.1"
+    "@sparkle-learning/core": "^0.0.1",
+    "sparkle-scripts": "^0.0.5"
   },
   "keywords": [
     "course",
