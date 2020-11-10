@@ -1,25 +1,34 @@
 {
   "name": "sparkle-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Made with Sparkle, Sparkle is the free open-source platform for creating learning content on web, mobile and desktop.",
   "homepage": "https://girlsinclearning.com/",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "start": "concurrently --kill-others \"npm run watch\" \"npm run dev\"",
-    "dev": "lite-server",
-    "watch": "webpack --watch --mode development",
-    "build": "webpack --mode production",
-    "all": "sparkle-scripts all",
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch",
+    "generate": "stencil generate",
     "pages": "sparkle-scripts pages",
     "generate-pages": "sparkle-scripts generate-pages",
     "toc": "sparkle-scripts toc",
-    "test": "sparkle-scripts test",
-    "local": "concurrently --kill-others \"webpack --watch --mode development --env.local=true\" \"npm run dev\""
+    "script-test": "sparkle-scripts test"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
+  "dependencies": {
+    "@sparkle-learning/core": "^0.0.1",
+    "sparkle-scripts": "^0.0.6"
+  },
   "devDependencies": {
+    "@ionic/core": "^5.3.2",
+    "@stencil/core": "^2.0.1",
     "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^5.3.0",
     "copy-webpack-plugin": "^6.0.3",
@@ -32,11 +41,6 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "workbox-webpack-plugin": "^5.1.3"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@sparkle-learning/core": "^0.0.1",
-    "sparkle-scripts": "^0.0.6"
   },
   "keywords": [
     "course",

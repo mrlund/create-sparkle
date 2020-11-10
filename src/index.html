@@ -1,108 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
-    />
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
 
 
-    <title>{{SPARKLE_TITLE}}</title>
+  <title>{{SPARKLE_TITLE}}</title>
 
-    <meta property="og:site_name" content="{{SPARKLE_TITLE}}" />
-    <meta property="og:title" content="{{SPARKLE_TITLE}}" />
+  <meta property="og:site_name" content="{{SPARKLE_TITLE}}" />
+  <meta property="og:title" content="{{SPARKLE_TITLE}}" />
 
-    <meta name="author" content="{{SPARKLE_AUTHOR}}" />
+  <meta name="author" content="{{SPARKLE_AUTHOR}}" />
 
-    <meta name="description" content="{{SPARKLE_DESCRIPTION}}" />
+  <meta name="description" content="{{SPARKLE_DESCRIPTION}}" />
 
-    <meta property="og:description" content="{{SPARKLE_DESCRIPTION}}" />
-    <meta property="og:site_name" content="{{SPARKLE_TITLE}}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://girlsinclearning.com" />
-    <meta
-      property="og:image"
-      content="https://girlsinclearning.com/images/logo-primary.png"
-    />
-    <meta property="og:image:type" content="image/png" />
+  <meta property="og:description" content="{{SPARKLE_DESCRIPTION}}" />
+  <meta property="og:site_name" content="{{SPARKLE_TITLE}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://girlsinclearning.com" />
+  <meta property="og:image" content="https://girlsinclearning.com/images/logo-primary.png" />
+  <meta property="og:image:type" content="image/png" />
 
-    <meta name="twitter:site" content="@girls_inc" />
-    <meta name="twitter:title" content="{{SPARKLE_TITLE}}" />
-    <meta name="twitter:description" content="{{SPARKLE_DESCRIPTION}}" />
-    <meta
-      name="twitter:image:src"
-      content="https://girlsinclearning.com/images/logo-primary.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@girls_inc" />
+  <meta name="twitter:title" content="{{SPARKLE_TITLE}}" />
+  <meta name="twitter:description" content="{{SPARKLE_DESCRIPTION}}" />
+  <meta name="twitter:image:src" content="https://girlsinclearning.com/images/logo-primary.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon/favicon.ico"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-config"
-      content="assets/favicon/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", async () => {
-          try {
-            await navigator.serviceWorker.register("service-worker.js");
-          } catch (e) {
-            console.warn("No service worker registered");
-          }
-        });
-      }
-    </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", async () => {
+        try {
+          await navigator.serviceWorker.register("service-worker.js");
+        } catch (e) {
+          console.warn("No service worker registered");
+        }
+      });
+    }
+  </script>
 
-    <script>
-      window.ROOM_NAME = "{{SPARKLE_TITLE}}";
-    </script>
+  <script>
+    window.ROOM_NAME = "{{SPARKLE_TITLE}}";
+  </script>
 
-    <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <style>
-      :root {
-        background: #ffffff;
-        --ion-background-color: #ffffff;
-      }
 
-      
-       body {
-        background: #ffffff;
-      }
-    </style>
-  </head>
-  <body>
-    <sparkle-root toc-path="/assets/content/toc.json"></sparkle-root>
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
 
-    <noscript>
-      Please enable Javascript to access this presentation.
-    </noscript>
-  </body>
+  <script type="module" src="/build/app.esm.js"></script>
+  <script nomodule src="/build/app.js"></script>
+
+  <link href="/build/app.css" rel="stylesheet">
+  <link href="../node_modules/@sparkle-learning/core/dist/sparkle-core/sparkle-core.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    :root {
+      background: #ffffff;
+      --ion-background-color: #ffffff;
+    }
+
+
+    body {
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <app-root></app-root>
+
+
+  <noscript>
+    Please enable Javascript to access this presentation.
+  </noscript>
+</body>
+
 </html>
