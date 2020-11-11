@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@sparkle-learning/core": "^0.0.1",
-    "sparkle-scripts": "^0.0.6"
+    "sparkle-scripts": "^0.0.7"
   },
   "devDependencies": {
     "@ionic/core": "^5.3.2",
