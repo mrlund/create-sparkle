@@ -8,6 +8,9 @@ export const config: Config = {
   taskQueue: 'async',
   outputTargets: [{
     type: 'www',
+    copy: [
+      { src: 'pages' }
+    ],
     serviceWorker: null
   }],
 };

@@ -1,0 +1,181 @@
+{
+  "path": "G:/Sparkle/test2/src/pages/course/module-one/session-one/page-four",
+  "github": null,
+  "body": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "Foobar is a Python library for dealing with word pluralization."
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "installation"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#installation"
+        },
+        "Installation"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Use the package manager ",
+      [
+        "a",
+        {
+          "href": "https://pip.pypa.io/en/stable/"
+        },
+        "pip"
+      ],
+      " to install foobar."
+    ],
+    " ",
+    [
+      "sparkle-code",
+      {
+        "language": "shell"
+      },
+      " ",
+      [
+        "pre",
+        null,
+        [
+          "code",
+          null,
+          "pip ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "install"
+          ],
+          " foobar"
+        ]
+      ],
+      " "
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "usage"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#usage"
+        },
+        "Usage"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "sparkle-code",
+      {
+        "language": "python"
+      },
+      " ",
+      [
+        "pre",
+        null,
+        [
+          "code",
+          null,
+          "import foobar\n\nfoobar.pluralize('word') # returns 'words'\nfoobar.pluralize('goose') # returns 'geese'\nfoobar.singularize('phenomena') # returns 'phenomenon'"
+        ]
+      ],
+      " "
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "contributing"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#contributing"
+        },
+        "Contributing"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change."
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Please make sure to update tests as appropriate."
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "license"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#license"
+        },
+        "License"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      [
+        "a",
+        {
+          "href": "https://choosealicense.com/licenses/mit/"
+        },
+        "MIT"
+      ]
+    ]
+  ],
+  "title": "Foobar",
+  "headings": [
+    {
+      "text": "Installation",
+      "href": "#installation"
+    },
+    {
+      "text": "Usage",
+      "href": "#usage"
+    },
+    {
+      "text": "Contributing",
+      "href": "#contributing"
+    },
+    {
+      "text": "License",
+      "href": "#license"
+    }
+  ],
+  "pageClass": "page-g-sparkle-test2-src-pages-course-module-one-session-one-page-four"
+}
