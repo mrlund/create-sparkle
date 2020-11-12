@@ -14,9 +14,9 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
     "generate": "stencil generate",
-    "pages": "sparkle-scripts pages",
-    "generate-pages": "sparkle-scripts generate-pages",
-    "toc": "sparkle-scripts toc",
+    "json-pages": "sparkle-scripts generate-json-pages",
+    "markdown-pages": "sparkle-scripts generate-toc-pages",
+    "toc": "sparkle-scripts generate-updated-toc",
     "script-test": "sparkle-scripts test"
   },
   "repository": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@sparkle-learning/core": "^0.0.1",
-    "sparkle-scripts": "^0.0.7"
+    "sparkle-scripts": "^0.0.10"
   },
   "devDependencies": {
     "@ionic/core": "^5.3.2",
