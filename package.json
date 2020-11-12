@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "stencil build",
-    "prestart": "npm run pages",
+    "prestart": "npm run json-pages",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
@@ -24,7 +24,7 @@
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
   "dependencies": {
-    "@sparkle-learning/core": "^0.0.1",
+    "@sparkle-learning/core": "^0.0.2",
     "sparkle-scripts": "^0.0.10"
   },
   "devDependencies": {
