@@ -23,7 +23,7 @@ npm run json-pages
 
 ## TOC
 
-To generate prev/next url in markown file, run:
+To generate prev/next url in markown file and to generate updated toc with prev/next url, run:
 
 ```bash
 npm run toc
