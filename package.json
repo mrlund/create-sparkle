@@ -25,9 +25,9 @@
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
   "dependencies": {
-    "@sparkle-learning/core": "^0.0.3",
+    "@sparkle-learning/core": "latest",
     "@stencil/router": "^1.0.1",
-    "sparkle-scripts": "^0.0.16"
+    "sparkle-scripts": "latest"
   },
   "devDependencies": {
     "@ionic/core": "^5.3.2",
