@@ -1,29 +1,12 @@
-# Page4
+# Compass
 
-Foobar is a Python library for dealing with word pluralization.
+Create Your Compass
 
-## Installation
+### The Living Compass Activity
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+1.  Log on to our Mind & Body Platform and complete the Compass questions.
+2.  Once done, post your results to the GCW!
 
-```bash
-pip install foobar
-```
+- [https://www.livingcompass.org/programintroduction](https://www.livingcompass.org/programintroduction)
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+<sparkle-compass></sparkle-compass>

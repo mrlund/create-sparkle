@@ -1,31 +1,27 @@
-# Page2
 
-Foobar is a Python library for dealing with word pluralization.
 
-## Installation
+# Introducing: The giga girls!
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+We're the Giga Girls, and we'll be your guide throughout this course. Hover over each of us, and let's get acquainted!
 
-```bash
-pip install foobar
-```
+<sparkle-cards>
+   <sparkle-card header="Zinab" icon="/assets/img/characters/zynab.png" size="lg">
+    <p><strong>I'm Zinab or Z.</strong> My family’s from Nigeria, and we live in the Melrose section of the South Bronx. I’m all about racial justice, and watch… I’m going to be first Muslim mayor of New York City. Believe that!</p>
+  </sparkle-card>
 
-## Usage
+  <sparkle-card header="Kimberly" icon="/assets/img/characters/kimberly.png" size="lg">
+    <p><strong>Hey, everyone, this Kimberly</strong> and I’m from Brooklyn. My dream is to become a venture capitalist, so I can fund businesses and causes led by other Black Women. I love watching reality TV shows that are related to business like Shark Tank and Undercover Boss.</p>
+  </sparkle-card>
 
-```python
-import foobar
+<sparkle-card header="Jen" icon="/assets/img/characters/jen.png" size="lg">
+    <p><strong>Hi, my name’s Jen</strong> and I’m from Murray Hill Queens. Second-generation Korean American. I love softball and statistics, so right now my dream job would be in sabermetrics. You know, basically a data analyst in baseball.</p>
+  </sparkle-card>
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+  <sparkle-card header="Yuna" icon="/assets/img/characters/yuna.png" size="lg">
+    <p><strong>Hi, my name’s Yuna</strong> and I’m from Murray Hill Queens. Second-generation Korean American. I love softball and statistics, so right now my dream job would be in sabermetrics. You know, basically a data analyst in baseball.</p>
+  </sparkle-card>
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+  <sparkle-card header="VALERIA" icon="/assets/img/characters/valeria.png" size="lg">
+    <p><strong>I'm VALERIA</strong> but most of my friends call me Val. First-generation Dominican from Washington Heights. I could watch MSNBC and CNN all day. In fact, one day I’m going to have my own political talk show like my crushes Rachel Maddow and Robin Roberts.</p>
+  </sparkle-card>
+</sparkle-cards>

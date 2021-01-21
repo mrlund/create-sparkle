@@ -1,0 +1,215 @@
+{
+    "50": {
+        "questionId": 50,
+        "questionText": "What are the three options for dealing with emotions?",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Repress",
+                "correct": true,
+                "feedback": ""
+            },
+            {
+                "option": "explode"
+            },
+            {
+                "option": "express"
+            }
+        ]
+    },
+    "51": {
+        "questionId": 51,
+        "questionText": "Name the primary emotions.",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Sadness"
+            },
+            {
+                "option": "anger",
+                "correct": true
+            },
+            {
+                "option": "fear"
+            },
+            {
+                "option": "happiness"
+            }
+        ]
+    },
+    "52": {
+        "questionId": 52,
+        "questionText": "List the techniques for managing emotions.",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Yes"
+            },
+            {
+                "option": "No",
+                "correct": true
+            },
+            {
+                "option": "Maybe"
+            }
+        ]
+    },
+    "53": {
+        "questionId": 53,
+        "questionText": "How should you deal with emotional upset?",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Blame others."
+            },
+            {
+                "option": "Pause to collect yourself.",
+                "correct": true
+            },
+            {
+                "option": "Throw something."
+            },
+            {
+                "option": "Act on your emotion."
+            }
+        ]
+    },
+    "54": {
+        "questionId": 54,
+        "questionText": "Name two characteristics of high emotional IQ.",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Yes"
+            },
+            {
+                "option": "No",
+                "correct": true
+            },
+            {
+                "option": "Maybe"
+            }
+        ]
+    },
+    "55": {
+        "questionId": 55,
+        "questionText": "What parts of the brain are activated by emotional upset?",
+        "questionType": "MULTIPLE-CHOICE",
+        "showOptionNumber": true,
+        "options": [
+            {
+                "option": "Yes"
+            },
+            {
+                "option": "No",
+                "correct": true
+            },
+            {
+                "option": "Maybe"
+            }
+        ]
+    },
+    "56": {
+        "questionId": 56,
+        "questionText": "What parts of the brain are activated by emotional upset?",
+        "questionType": "FEEDBACK",
+        "showOptionNumber": true
+    },
+    "57": {
+        "questionId": 57,
+        "questionText": "What parts of the brain are activated by emotional upset?",
+        "questionType": "TEXT"
+    },
+    "58": {
+        "questionId": 58,
+        "questionText": "What negative myths, judgements or messages have I inherited about certain emotions??",
+        "questionType": "POLL"
+    },
+    "59": {
+        "questionId": 59,
+        "questionText": "What is it like to know I have carried around these false ideas all this time? ",
+        "questionType": "POLL"
+    },
+    "60": {
+        "questionId": 60,
+        "questionText": "What changes can I make to my life and my place in that world to address these emotional myths?",
+        "questionType": "POLL"
+    },
+    "61": {
+        "questionId": 61,
+        "questionText": "I feel confident with the way I receive, budget, spend, and keep track of money, either in the form of an allowance or earnings from a job.",
+        "questionType": "OPINION",
+        "scale": "FIVE-POINTS",
+        "extraData": {
+            "compass": "organization"
+        }
+    },
+    "62": {
+        "questionId": 62,
+        "questionText": "I am always on time for school, work, and other commitments.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "organization"
+        }
+    },
+    "63": {
+        "questionId": 63,
+        "questionText": "I organize my time and plan ahead to make sure that I allow enough time to get everything done.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "organization"
+        }
+    },
+    "64": {
+        "questionId": 64,
+        "questionText": "I am happy with the way I organize my priorities, ensuring that I have enough time to dedicate to all the different aspects of my life.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "organization"
+        }
+    },
+    "65": {
+        "questionId": 65,
+        "questionText": "The choices I make about what I eat and drink are healthy.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "care"
+        }
+    },
+    "66": {
+        "questionId": 66,
+        "questionText": "I have positive feelings about my relationship with food (what I eat, why I eat and how often I eat).",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "care"
+        }
+    },
+    "67": {
+        "questionId": 67,
+        "questionText": "I am satisfied with the amount of exercise I get on a regular basis.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "care"
+        }
+    },
+    "68": {
+        "questionId": 68,
+        "questionText": "I determine what is right for me, in terms of weight and appearance, rather than letting my peers or culture determine that for me.",
+        "questionType": "OPINION",
+        "scale": "TEN-POINTS",
+        "extraData": {
+            "compass": "care"
+        }
+    }
+}
