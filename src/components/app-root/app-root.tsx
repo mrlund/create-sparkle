@@ -18,7 +18,12 @@ export class AppRoot {
     globalAssetsUrl: 'http://localhost:3333/assets',
     apiUrl: 'http://localhost:3333',
     quizPath: this.quizPath,
-    tocPath: this.tocPath
+    tocPath: this.tocPath,
+    menu: {
+      showRomanNumber: true,
+      showModuleIndex: true,
+      showSessionIndex: true
+    }
   }
   //ICourse;
 
@@ -70,7 +75,7 @@ export class AppRoot {
         <stencil-router class={layout}>
           <stencil-route style={{ display: 'none' }} routeRender={this.setHistory} />
           <sparkle-header toggleClickFn={this.toggleMenu} />
-          <sparkle-menu toc={this.tocData} toggleClickFn={this.toggleMenu} />
+          <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />
           <stencil-route-switch scrollTopOffset={0}>
             <stencil-route
               url="/course/:page*"
