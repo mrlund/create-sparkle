@@ -63,7 +63,29 @@ export class AppRoot {
   isSmallViewport() {
     return matchMedia && matchMedia('(max-width: 768px)').matches;
   }
+  async toggleStudentSidebar() {
+    var sidebar = document.getElementById("onlineStudents") as HTMLSparkleSidebarElement;
+    await sidebar.show();
+  }
 
+  renderPage(path: "login" | "signup" | "forgot-password" | "home/my-mood") {
+    return (
+      <stencil-route
+        url={"/" + path}
+        routeRender={() => [
+          <sparkle-header toggleClickFn={this.toggleMenu} />,
+          <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />,
+          <sparkle-page>
+            {path == "login" && <sparkle-login />}
+            {path == "signup" && <sparkle-signup />}
+            {path == "forgot-password" && <sparkle-forgot-password />}
+            {path == "home/my-mood" && <sparkle-mood />}
+          </sparkle-page>
+        ]}
+      />
+
+    )
+  }
   render() {
     const layout = {
       'Layout': true,
@@ -74,17 +96,42 @@ export class AppRoot {
       <sparkle-root config={this.config}>
         <stencil-router class={layout}>
           <stencil-route style={{ display: 'none' }} routeRender={this.setHistory} />
-          <sparkle-header toggleClickFn={this.toggleMenu} />
-          <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />
           <stencil-route-switch scrollTopOffset={0}>
             <stencil-route
               url="/course/:page*"
-              routeRender={props => <sparkle-page path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />}
+              routeRender={props =>
+                [<sparkle-header toggleClickFn={this.toggleMenu} />,
+                <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />,
+                <sparkle-page path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick}
+                />]}
             />
             <stencil-route
-              url="/home/:page*"
-              routeRender={props => <sparkle-page path={`/home/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />}
+              url="/presentation/course/:page*"
+              routeRender={props => <sparkle-page presentation={true} path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />}
             />
+            <stencil-route
+              url="/presentation/teacher/:page*"
+              routeRender={props => [
+                <sparkle-facilitator-header toggleStudentClickFn={this.toggleStudentSidebar} toggleClickFn={this.toggleMenu} />,
+
+                <sparkle-facilitator-page path={`/course/${props.match.params.page || 'index'}-notes.json`} onClick={this.handlePageClick} />,
+                <sparkle-sidebar position="right" header-text="Online Students" id="onlineStudents">
+                  <ion-button color="primary">Primary</ion-button>,
+                  <sparkle-online-students />
+                </sparkle-sidebar>
+              ]}
+            />
+            {this.renderPage("home/my-mood")}
+            <stencil-route
+              url="/home/:page*"
+              routeRender={props =>
+                [<sparkle-header toggleClickFn={this.toggleMenu} />,
+                <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />,
+                <sparkle-page path={`/course/home/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />]}
+            />
+            {this.renderPage("login")}
+            {this.renderPage("signup")}
+            {this.renderPage("forgot-password")}
           </stencil-route-switch>
         </stencil-router>
       </sparkle-root>
