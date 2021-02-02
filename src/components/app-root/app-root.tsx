@@ -68,11 +68,11 @@ export class AppRoot {
     await sidebar.show();
   }
 
-  renderPage(path: "login" | "signup" | "forgot-password" | "home/my-mood") {
+  renderPage(path: "login" | "signup" | "forgot-password" | "home/my-mood" | "home/my-health" | "home/my-goals" | "home/great-white-wall") {
     return (
       <stencil-route
         url={"/" + path}
-        routeRender={() => [
+        routeRender={props => [
           <sparkle-header toggleClickFn={this.toggleMenu} />,
           <sparkle-menu toc={this.tocData} config={this.config.menu} toggleClickFn={this.toggleMenu} />,
           <sparkle-page>
@@ -80,6 +80,9 @@ export class AppRoot {
             {path == "signup" && <sparkle-signup />}
             {path == "forgot-password" && <sparkle-forgot-password />}
             {path == "home/my-mood" && <sparkle-mood />}
+            {path == "home/my-health" && <sparkle-health />}
+            {path == "home/my-goals" && <sparkle-goals />}
+            {path == "home/great-white-wall" && <sparkle-gww />}
           </sparkle-page>
         ]}
       />
@@ -122,6 +125,9 @@ export class AppRoot {
               ]}
             />
             {this.renderPage("home/my-mood")}
+            {this.renderPage("home/my-health")}
+            {this.renderPage("home/my-goals")}
+            {this.renderPage("home/great-white-wall")}
             <stencil-route
               url="/home/:page*"
               routeRender={props =>
