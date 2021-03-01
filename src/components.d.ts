@@ -33,6 +33,7 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppRoot {
+        "onPageChanged"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "app-home": AppHome;
