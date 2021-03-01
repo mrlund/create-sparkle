@@ -25,10 +25,10 @@
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
   "dependencies": {
-    "@sparkle-learning/core": "^0.0.13",
+    "@sparkle-learning/core": "^0.0.14",
     "@stencil/router": "^1.0.1",
     "@stencil/store": "^1.4.1",
-    "sparkle-scripts": "latest"
+    "sparkle-scripts": "0.0.17"
   },
   "devDependencies": {
     "@ionic/core": "^5.3.2",
