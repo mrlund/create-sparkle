@@ -45,4 +45,4 @@ To update the content, you can run the following command
 ```bash
 npm run watch-pages
 ```
-and then you can change the content in .md files and and json file will be updated automatically and then it'll show blue progress bar once it's completed, you can refresh the page and content will be updated. I am looking at the solution where we don't need to refresh the page but for now we need to update
+and then you can change the content in .md files and and json file will be updated automatically and then it'll show blue progress bar once it's completed, you can refresh the page and content will be updated. I am looking at the solution where we don't need to refresh the page but for now we need to refresh.
