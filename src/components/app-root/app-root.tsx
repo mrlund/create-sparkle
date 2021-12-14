@@ -86,12 +86,12 @@ export class AppRoot {
         url={"/" + path}
         routeRender={() =>
           [this.renderHeaderAndMenu(),
-          <sparkle-page path="">
+          <sparkle-page history={this.history} path="">
             {path == "login" && <sparkle-login />}
             {path == "signup" && <sparkle-signup />}
             {path == "forgot-password" && <sparkle-forgot-password />}
-            {path == "home/my-mood" && <sparkle-mood />}
-            {path == "home/my-health" && <sparkle-health />}
+            {path == "home/my-mood" && <sparkle-mood history={this.history}/>}
+            {path == "home/my-health" && <sparkle-health history={this.history} />}
             {path == "home/my-goals" && <sparkle-goals />}
             {path == "home/great-white-wall" && <sparkle-gww />}
           </sparkle-page>
@@ -106,7 +106,7 @@ export class AppRoot {
         url={"/" + path}
         render={() =>
           [this.renderHeaderAndMenu(),
-          <sparkle-page path="">
+          <sparkle-page path="" history={this.history}>
             {path == "profile" && <sparkle-user-profile />}
             {path == "enrollment" && <sparkle-user-enrollment />}
           </sparkle-page>
@@ -154,19 +154,20 @@ export class AppRoot {
                 url="/course/:page*"
                 routeRender={props =>
                   [this.renderHeaderAndMenu(),
-                  <sparkle-page path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick}
+                  <sparkle-page history={this.history} path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick}
                   />]}
               />
               <stencil-route
                 url="/presentation/course/:page*"
-                routeRender={props => <sparkle-page presentation={true} path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />}
+                routeRender={props => <sparkle-page history={this.history} presentation={true} path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />}
               />
               <stencil-route
                 url="/presentation/teacher/:page*"
                 routeRender={props => [
                   <sparkle-facilitator-header toggleStudentClickFn={this.toggleStudentSidebar} />,
 
-                  <sparkle-facilitator-page path={`/course/${props.match.params.page || 'index'}-notes.json`} onClick={this.handlePageClick} />,
+                  <sparkle-facilitator-page 
+                  notesPath={`/course/${props.match.params.page || 'index'}-notes.json`} path={`/course/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />,
                   <sparkle-sidebar position="right" header-text="Online Students" id="onlineStudents">
                     <ion-button color="primary">Primary</ion-button>,
                   <sparkle-online-students />
@@ -189,7 +190,7 @@ export class AppRoot {
                 url="/home/:page*"
                 render={props =>
                   [this.renderHeaderAndMenu(),
-                  <sparkle-page path={`/course/home/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />]}
+                  <sparkle-page  history={this.history} path={`/course/home/${props.match.params.page || 'index'}.json`} onClick={this.handlePageClick} />]}
               />
 
               {this.renderPage("login")}
