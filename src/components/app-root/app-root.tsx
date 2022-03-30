@@ -130,6 +130,17 @@ export class AppRoot {
     AuthService.getInstance().signOut();
     this.history.replace('/login', {})
   }
+  getFirstLessonUrl() {
+    if (this.tocData) {
+      let firstModule = this.tocData.courseModules[0];
+      let firstSession = firstModule.sessions[0];
+      let firstPage = firstSession.pages[0];
+      let url = '/course/' + firstModule.urlName + '/' + firstSession.urlName + '/' + firstPage.urlName;
+      return url;
+    } else {
+      return '/home';
+    }
+  }
   render() {
     const layout = {
       'Layout': true,
@@ -141,6 +152,10 @@ export class AppRoot {
           <stencil-router class={layout}>
             <stencil-route style={{ display: 'none' }} routeRender={this.setHistory} />
             <stencil-route-switch scrollTopOffset={0}>
+            <stencil-route url="/" exact={true}>
+                <stencil-router-redirect url={this.getFirstLessonUrl()} />
+              </stencil-route>
+           
               <stencil-route
                 url="/unauthorized"
                 routeRender={() =>
