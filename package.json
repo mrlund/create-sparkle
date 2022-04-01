@@ -25,26 +25,26 @@
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
   "dependencies": {
-    "@sparkle-learning/core": "^0.0.28",
+    "@sparkle-learning/core": "0.0.29",
     "@stencil/router": "^1.0.1",
-    "@stencil/store": "^1.4.1",
+    "@stencil/store": "^1.5.0",
     "sparkle-scripts": "0.0.17"
   },
   "devDependencies": {
-    "@ionic/core": "^5.3.2",
-    "@stencil/core": "^2.0.1",
-    "clean-webpack-plugin": "^3.0.0",
-    "concurrently": "^5.3.0",
-    "copy-webpack-plugin": "^6.0.3",
-    "css-loader": "^4.2.1",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
-    "lite-server": "^2.5.4",
+    "@ionic/core": "^6.0.14",
+    "@stencil/core": "^2.15.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lite-server": "^2.6.1",
     "progress-bar-webpack-plugin": "^2.1.0",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "workbox-webpack-plugin": "^5.1.3"
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "workbox-webpack-plugin": "^6.5.2"
   },
   "keywords": [
     "course",
