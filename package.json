@@ -1,6 +1,6 @@
 {
   "name": "sparkle-starter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Made with Sparkle, Sparkle is the free open-source platform for creating learning content on web, mobile and desktop.",
   "homepage": "https://girlsinclearning.com/",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "url": "git://github.com/mrlund/create-sparkle.git"
   },
   "dependencies": {
-    "@sparkle-learning/core": "0.0.51",
+    "@sparkle-learning/core": "^0.0.59",
     "@stencil/router": "^1.0.1",
     "@stencil/store": "^1.5.0",
     "sparkle-scripts": "0.0.19"
